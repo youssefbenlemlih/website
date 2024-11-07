@@ -1,0 +1,35 @@
+backend:
+  name: github
+  branch: main # Branch to update (optional; defaults to master)
+  repo: youssefbenlemlih/new-webpage
+  ##site_domain: www.saxophonetutor.com
+  commit_messages:
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
+
+# publish_mode: editorial_workflow
+media_folder: "public/images/posts" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/posts" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Created Date", name: "date", widget: "date"}
+      - {label: "Modified Date", name: "modifiedDate", widget: "date"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Meta tags", name: "metaTags", widget: "list"}

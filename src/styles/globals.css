@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  ul {
+    @apply list-inside list-disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  li {
+    @apply mb-2;
+  }
+}
+
+mark {
+  @apply rounded-md bg-amber-600  bg-opacity-75 font-semibold;
+  padding: 0.1rem 0.2rem;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.shiki {
+  font-size: 0.8em;
+  counter-reset: step;
+  counter-increment: step 0;
+  padding: 12px;
+  overflow-x: scroll;
+}
+
+.shiki .line::before {
+  content: counter(step);
+  counter-increment: step;
+  margin-right: 0.5rem;
+  display: inline-block;
+  text-align: right;
+  width: 2ch;
+  color: rgba(115, 138, 148, 0.4);
+}
