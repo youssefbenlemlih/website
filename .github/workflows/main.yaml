@@ -1,0 +1,33 @@
+name: Request Google Indexing
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Cache Yarn packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/yarn
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Run Command
+        env:
+          GIS_CLIENT_EMAIL: ${{ secrets.GIS_CLIENT_EMAIL }}
+          GIS_PRIVATE_KEY: ${{ secrets.GIS_PRIVATE_KEY }}
+        run: |
+         PATH="$PATH:./node_modules/.bin"
+          GIS_CLIENT_EMAIL=$GIS_CLIENT_EMAIL GIS_PRIVATE_KEY=$GIS_PRIVATE_KEY ./node_modules/.bin/gis youssefbee.com
