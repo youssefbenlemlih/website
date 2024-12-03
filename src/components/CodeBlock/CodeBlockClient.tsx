@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 import { IconFoldDown, IconFoldUp } from "@tabler/icons-react";
 const LONG_LINES = 20000;
 const LINES_SHOWN = 12;
-export type CodeBlockProps = {
+type CodeBlockProps = {
   language: string;
   code: string;
   minimal?: boolean;

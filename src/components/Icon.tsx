@@ -8,10 +8,8 @@ export const Icon = ({
   color,
   size,
   className,
-}: TablerIcon.TablerIconsProps & { name: IconName }) => {
-  const MappedIcon = TablerIcon[
-    name
-  ] as ComponentType<TablerIcon.TablerIconsProps>;
+}: TablerIcon.IconProps & { name: IconName }) => {
+  const MappedIcon = TablerIcon[name] as ComponentType<TablerIcon.IconProps>;
 
   if (!MappedIcon) throw new Error(`Icon '${name}' not found in Tabler Icons`);
   return (

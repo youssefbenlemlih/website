@@ -3,7 +3,7 @@ import { Image } from "./Image";
 import { Post } from "contentlayer2/generated";
 import { Card, CardSection, Group, Text } from "@mantine/core";
 
-export type PostOverview = Pick<
+type PostOverview = Pick<
   Post,
   "slug" | "image" | "title" | "draft" | "description"
 >;

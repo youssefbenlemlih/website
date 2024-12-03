@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import {
   Button,
   Card,
@@ -9,10 +8,12 @@ import {
   TextInput,
   Title,
 } from "@mantine/core";
-import { useRouter } from "next/navigation";
 import { useForm } from "@mantine/form";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import { site } from "../../site";
 
-const formUrl = "https://store.youssefbee.com/email-subscribe/external";
+const formUrl = `${site.lemonsqueezyStore}/email-subscribe/external`;
 const redirectUrl = "/landings/newsletter-joined";
 
 export function NewsLetter({ minimal }: { minimal?: boolean }) {

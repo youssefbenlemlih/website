@@ -70,8 +70,6 @@ module.exports = {
         "blue-10": "var(--mantine-color-blue-10)",
         
         "aqua-500": "var(--mantine-color-green-10)",
-        "beige-200": "#fffbe5",
-        "beige-300": "#f3e5d2",
         "black-850": "#282828",
         "black-900": "#1D2021",
         "grey-one": "#EBEBEB",

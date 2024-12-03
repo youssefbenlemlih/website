@@ -1,6 +1,7 @@
 import React from "react";
-import { H1, P } from "../../components";
 import { createMetadata } from "@/lib/createMetadata";
+import { H1 } from "@/components/H1";
+import { P } from "@/components/P";
 
 export const metadata = createMetadata({
   path: "/code-reviews",

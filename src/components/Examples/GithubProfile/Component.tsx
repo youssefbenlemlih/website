@@ -1,6 +1,6 @@
 "use client";
+import { P } from "@/components/P";
 import { useEffect, useState } from "react";
-import { P } from "@/components";
 
 export function Component() {
   const [userName, setUserName] = useState("youssefbenlemlih");

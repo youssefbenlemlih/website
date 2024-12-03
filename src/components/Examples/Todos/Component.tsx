@@ -3,7 +3,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Checkbox, Flex, Kbd, Text, TextInput } from "@mantine/core";
 
-export type TodoItem = {
+type TodoItem = {
   text: string;
   checked: boolean;
   id: string;
@@ -13,7 +13,7 @@ type TodoProps = {
   todo: TodoItem;
   onCheckedChange: () => void;
 };
-export const Todo = ({
+const Todo = ({
   todo: { checked, text },
   onCheckedChange,
 }: TodoProps) => {

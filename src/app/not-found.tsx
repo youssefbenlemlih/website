@@ -1,7 +1,7 @@
-import React from "react";
-import { ButtonLink, H1, P } from "../components";
+import { ButtonLink } from "@/components/ButtonLink";
+import { H1 } from "@/components/H1";
+import { P } from "@/components/P";
 import { createMetadata } from "@/lib/createMetadata";
-
 export const metadata = createMetadata({
   path: undefined,
   title: "Not Found",
@@ -13,11 +13,9 @@ export const metadata = createMetadata({
 export const NotFound404 = () => {
   return (
     <>
-      <H1>Oops</H1>
-      <P>
-        The page you requested cannot be found. It may have been renamed or
-        removed.
-      </P>
+      <H1>Page Not Found</H1>
+      <P>The page you requested cannot be found.</P>
+      <P>It may have been renamed or removed.</P>
       <br />
       <ButtonLink text={"Go back to the blog"} href={"/posts"} />
     </>

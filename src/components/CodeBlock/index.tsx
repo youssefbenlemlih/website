@@ -1,7 +1,7 @@
 import { CodeBlockClient } from "./CodeBlockClient";
 import { highlight } from "./shared";
 
-export type CodeBlockProps = {
+type CodeBlockProps = {
   language: string;
   code: string;
   minimal?: boolean;

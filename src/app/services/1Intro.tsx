@@ -1,10 +1,16 @@
-import { Button, Center, Flex, rem, Text } from "@mantine/core";
-import { Highlight } from "@/components/Highlight";
+import { Button, Center, Flex, Text } from "@mantine/core";
+import { site } from "../../../site";
 
 export const Intro = () => (
   <>
     <Flex direction={"column"} justify={"center"} m="xl" h="80vh">
-      <Text fw={500} ta="center" size={rem(60)} style={{ textWrap: "balance" }}>
+      <Text
+        fw={600}
+        ta="center"
+        size={"2xl"}
+        lh="lg"
+        style={{ textWrap: "balance" }}
+      >
         Custom Software, That Fits your Needs
       </Text>
       <Text ta="center" size="xl" mt="md" style={{ textWrap: "balance" }}>
@@ -15,7 +21,7 @@ export const Intro = () => (
         <Button
           variant="transparent"
           component="a"
-          href="mailto:youssef.benlemlih@codecentric.de"
+          href={`mailto:${site.email}`}
         >
           Send An Email
         </Button>

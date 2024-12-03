@@ -1,40 +1,51 @@
 import dayjs from "dayjs";
 import { MetadataRoute } from "next";
 import {
+  getAllNewslettersSortedByCreatedDate,
   getAllPostsSortedByCreatedDate,
   getTagLastModifiedDate,
 } from "@/lib/mdx";
 import { TagKeys } from "@/types";
+import { site } from "../../site";
 
-const basePath = "https://www.youssefbee.com";
 
 const posts = getAllPostsSortedByCreatedDate();
 
 const staticPaths = [
   "/",
-  "/frontend-kit",
   "/about",
-  "/posts",
   "/code-reviews",
+  "/frontend-kit",
+  // ❌ "/images",
+  // ❌ "/landings",
   "/newsletter",
+  "/posts",
+  "/resources",
+  "/services",
+  "/tags",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPaths.map((path) => ({
-      url: basePath + path,
+      url: site.url + path,
       lastModified: dayjs(new Date()).format("YYYY-MM-DD"),
       changeFrequency: "weekly" as const,
     })),
     ...posts.map((post) => ({
-      url: basePath + "/posts/" + post.slug,
+      url: site.url + "/posts/" + post.slug,
       changeFrequency: "weekly" as const,
       lastModified: post.modifiedDate
         ? dayjs(post.modifiedDate).format("YYYY-MM-DD")
         : dayjs(post.date).format("YYYY-MM-DD"),
     })),
+    ...getAllNewslettersSortedByCreatedDate().map((newsletter) => ({
+      url: site.url + "/newsletter/" + newsletter.slug,
+      changeFrequency: "weekly" as const,
+      lastModified: dayjs(newsletter.date).format("YYYY-MM-DD"),
+    })),
     ...TagKeys.map((tag) => ({
-      url: basePath + "/tags/" + tag,
+      url: site.url + "/tags/" + tag,
       changeFrequency: "weekly" as const,
       lastModified: getTagLastModifiedDate(tag),
     })),

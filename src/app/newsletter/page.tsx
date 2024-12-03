@@ -1,5 +1,6 @@
+import { H1 } from "@/components/H1";
+import { H2 } from "@/components/H2";
 import { NewsLetterForm } from "@/components/NewsLetterForm";
-import { H1, H2 } from "../../components";
 import { createMetadata } from "@/lib/createMetadata";
 import { getAllNewslettersSortedByCreatedDate } from "@/lib/mdx";
 import { Card, Stack, Text } from "@mantine/core";

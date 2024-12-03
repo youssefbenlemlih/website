@@ -6,7 +6,11 @@ import { SubmitCodeReviewCTA } from "@/components/SubmitCodeReviewCTA";
 import { createMetadata } from "@/lib/createMetadata";
 import { getLatestYoutubeVideoSlug } from "@/lib/mdx";
 import profile from "../../public/images/profile.jpg";
-import { A, H1, H2, LatestInTheBlog, P } from "../components";
+import { A } from "@/components/A";
+import { H1 } from "@/components/H1";
+import { H2 } from "@/components/H2";
+import { LatestInTheBlog } from "@/components/LatestInTheBlog";
+import { P } from "@/components/P";
 
 export const metadata = createMetadata({
   path: "/",

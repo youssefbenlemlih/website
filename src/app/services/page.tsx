@@ -3,7 +3,8 @@ import { Intro } from "./1Intro";
 import { Pillars } from "./2Pillars";
 import { Services } from "./3Services";
 import { Process } from "./4Process";
-import { H2, H3 } from "@/components";
+import { H2 } from "@/components/H2";
+import { H3 } from "@/components/H3";
 import { LastCTA } from "./99LastCTA";
 
 export const metadata = createMetadata({
