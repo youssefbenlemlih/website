@@ -1,55 +1,62 @@
-import { A } from "@/components/A";
-import { Icon } from "@/components/Icon";
-import { TagKeys } from "@/types";
-import { Flex } from "@mantine/core";
+import { ActionIcon, ActionIconGroup, Box, Text } from "@mantine/core";
+import {
+  IconBrandLinkedinFilled,
+  IconBrandTwitterFilled,
+  IconBrandYoutubeFilled,
+  IconMailFilled,
+} from "@tabler/icons-react";
+import { site } from "../../site";
 import { Logo } from "./Logo";
-import { Navigation } from "./Navigation";
-import { P } from "./P";
-import { Tag } from "./Tag";
+import { FooterNavigation } from "./Navigation";
 
 export function Footer() {
   return (
-    <div className="mx-auto w-full max-w-4xl  p-8 ">
-      <div className={"grid grid-cols-[3fr_2fr_2fr] py-5 "}>
-        <div className={"flex flex-col justify-between "}>
-          <Logo />
-          <div className={"flex gap-3"}>
-            <A href="https://www.linkedin.com/in/youssef-bee/">
-              <Icon name={"IconBrandLinkedin"} />
-            </A>
-            <A href="https://www.youtube.com/channel/UCo-mJy_in2AasU9t-TOVKqw">
-              <Icon name={"IconBrandYoutube"} />
-            </A>
-            <A href="https://twitter.com/YBenlemlih">
-              <Icon name={"IconBrandTwitter"} />
-            </A>
-            <A href="/newsletter">
-              <Icon name={"IconMail"} />
-            </A>
-          </div>
-        </div>
-        <div className={"flex flex-col justify-between "}>
-          <div className={"flex flex-col items-start"}>
-            <P className="p-0 pb-2 text-sm font-bold opacity-70">Navigate</P>
-            <Navigation className={"gap- flex flex-col"} />
-          </div>
-        </div>
-        <div className={"flex flex-col justify-between "}>
-          <div className={"flex flex-col items-start"}>
-            <P className="p-0 pb-2 text-sm font-bold opacity-70">
-              Posts by tags
-            </P>
-            <Flex direction={"column"} gap={"xs"} align={"start"}>
-              {TagKeys.map((tag, index) => (
-                <Tag tag={tag} key={index} />
-              ))}
-            </Flex>
-          </div>
-        </div>
-      </div>
-      <P className="text-center font-light opacity-75">
+    <>
+      <Box className="grid m-12 gap-6 justify-items-center  md:grid-cols-[1fr_auto_1fr]">
+        <Logo />
+        <FooterNavigation />
+        <ActionIconGroup>
+          <ActionIcon
+            component="a"
+            href={site.youtube}
+            size={"lg"}
+            variant="outline"
+            radius={"md"}
+          >
+            <IconBrandYoutubeFilled />
+          </ActionIcon>
+          <ActionIcon
+            component="a"
+            href={site.linkedIn}
+            size={"lg"}
+            variant="outline"
+            radius={"md"}
+          >
+            <IconBrandLinkedinFilled />
+          </ActionIcon>
+          <ActionIcon
+            component="a"
+            href={site.twitter}
+            size={"lg"}
+            variant="outline"
+            radius={"md"}
+          >
+            <IconBrandTwitterFilled />
+          </ActionIcon>
+          <ActionIcon
+            component="a"
+            href={`mailto:${site.email}`}
+            size={"lg"}
+            variant="outline"
+            radius={"md"}
+          >
+            <IconMailFilled />
+          </ActionIcon>
+        </ActionIconGroup>
+      </Box>
+      <Text mt="xl" size="sm" c="dimmed" ta="center">
         ©2024 Youssef. All Rights Reserved.
-      </P>
-    </div>
+      </Text>
+    </>
   );
 }

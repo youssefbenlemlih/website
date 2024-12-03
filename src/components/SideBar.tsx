@@ -18,7 +18,7 @@ const Section = ({ children }: { children?: ReactNode }) => (
   </div>
 );
 
-export const EnjoyTheBlogSection = () => (
+const EnjoyTheBlogSection = () => (
   <Section>
     <Anchor href={"/about"}>
       <div className={"flex gap-3 "}>

@@ -1,13 +1,3 @@
-import {
-  A,
-  H1,
-  H2,
-  H3,
-  Image,
-  NewsLetter,
-  P,
-  WithMaxWidth,
-} from "@/components";
 import { Highlight } from "@/components/Highlight";
 import { Icon, IconName } from "@/components/Icon";
 import { createMetadata } from "@/lib/createMetadata";
@@ -15,6 +5,13 @@ import { ActionIcon, ActionIconGroup, Badge, Card, Text } from "@mantine/core";
 import { IconBrandGithub, IconWorld } from "@tabler/icons-react";
 import { Fragment, ReactNode } from "react";
 import profile from "../../../public/images/profile.jpg";
+import { A } from "@/components/A";
+import { H1 } from "@/components/H1";
+import { P } from "@/components/P";
+import { H2 } from "@/components/H2";
+import { H3 } from "@/components/H3";
+import { Image } from "@/components/Image";
+import { NewsLetter } from "@/components/NewsLetter";
 
 type Technology = {
   icon: IconName;
@@ -368,7 +365,7 @@ const About = () => {
       </div>
       <br />
       <br />
-      <WithMaxWidth>{<NewsLetter />}</WithMaxWidth>
+      <NewsLetter />
     </>
   );
 };

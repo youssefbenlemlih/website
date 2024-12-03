@@ -3,6 +3,7 @@ import { NextRequest } from "next/server";
 import React from "react";
 import { Svg } from "@/app/images/banners/[slug]/svg";
 import { notFound } from "next/navigation";
+import { site } from "../../../../../site";
 
 export type ImageDefinition = {
   slug: string;
@@ -78,7 +79,7 @@ export async function GET(
             width={100}
             height={100}
             tw={"rounded-full w-[100px] h-[100px] mr-[20px]"}
-            src={"http://youssefbee.com" + "/images/profile.jpg"}
+            src={site.url + "/images/profile.jpg"}
             alt={"Youssef's profile picture."}
           />
           <div tw={"flex flex-col"}>

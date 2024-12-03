@@ -33,10 +33,6 @@ type RenderMdxProps = {
   body: Post["body"];
 };
 
-type WithHrefAnchorProps = {
-  id: string;
-};
-
 type HrefAnchorWrapperProps = {
   id?: string;
   children: ReactNode;
@@ -87,7 +83,7 @@ const components: MDXComponents = {
   td: TableTd,
   Div: (p) => <div {...p} />,
   Accordion: (p) => (
-    <Accordion variant="separated" chevronPosition="left" defaultValue="Apples">
+    <Accordion variant="separated" chevronPosition="left">
       <AccordionItem key={p.title} value={p.title}>
         <AccordionControl >{p.title}</AccordionControl>
         <AccordionPanel>{p.children}</AccordionPanel>
@@ -97,7 +93,7 @@ const components: MDXComponents = {
   LinkButton: (props) => <Button component="a" target="_blank" {...props} />,
   img: (props) => (
     <img
-      className={"h-auto w-full rounded-md"}
+      className={"h-auto w-full rounded-md max-w-xl"}
       {...props}
       src={props.src?.replace(/^images/, "/images")}
     />

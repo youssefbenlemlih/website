@@ -7,7 +7,8 @@ import { createMetadata } from "@/lib/createMetadata";
 import { TagMap, TagType } from "@/types";
 import dayjs from "dayjs";
 import { RenderMdx } from "@/components/RenderMdx";
-import { H1, NewsLetter } from "@/components";
+import { H1 } from "@/components/H1";
+import { NewsLetter } from "@/components/NewsLetter";
 import { Text } from "@mantine/core";
 
 const PostPage = ({ params }: { params: { slug: string } }) => {

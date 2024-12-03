@@ -1,6 +1,6 @@
-import { Heading } from "@/types";
-import { cn } from "@/lib/utils";
 import { Icon } from "@/components/Icon";
+import { cn } from "@/lib/utils";
+import { Heading } from "@/types";
 import { Card, CardSection, NavLink, Text } from "@mantine/core";
 import { IconList } from "@tabler/icons-react";
 type TableOfContentProps = { headings: Heading[] };
@@ -8,9 +8,9 @@ type TableOfContentProps = { headings: Heading[] };
 export function TableOfContent({ headings }: TableOfContentProps) {
   if (headings.length === 0) return <></>;
   return (
-    <Card withBorder shadow="sm" radius="md" p={"xs"}>
+    <Card withBorder shadow="sm" radius="md" py={"xs"} px={0}>
       <CardSection withBorder mb="xs">
-        <Text size="sm" p="sm" mb={3}>
+        <Text size="sm" m={"sm"} pl="sm" mb={"xs"}>
           <IconList className="my-auto inline w-4" /> Table of contents
         </Text>
       </CardSection>
@@ -23,14 +23,14 @@ export function TableOfContent({ headings }: TableOfContentProps) {
           className={cn(
             "group  ",
             type === "h2" && "ml-0",
-            type === "h3" && "ml-6",
-            type === "h4" && "ml-12",
-            type === "h5" && "ml-18",
+            type === "h3" && "ml-2",
+            type === "h4" && "ml-4",
+            type === "h5" && "ml-6",
           )}
           leftSection={
             icon ? (
               <Icon
-                className={"mx-0 mr-1 h-4"}
+                className={"mx-0 h-4"}
                 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
                 // @ts-ignore
                 name={icon}

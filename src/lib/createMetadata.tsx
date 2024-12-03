@@ -1,13 +1,14 @@
 import { Metadata } from "next";
 import dayjs from "dayjs";
+import { site } from "../../site";
 
 const formatUrl = (image: string | string[]): string | string[] => {
   if (typeof image === "string")
-    return `https://www.youssefbee.com/${image.replace(/^\//, "")}`;
+    return `${site.url}/${image.replace(/^\//, "")}`;
   else return image.map((i) => formatUrl(i)) as string[];
 };
 
-export interface MetaProps {
+interface MetaProps {
   title: string;
   description: string;
   path: string | undefined;
@@ -36,10 +37,10 @@ export function createMetadata(meta: MetaProps): Metadata {
   return {
     title: meta.title,
     description: meta.description,
-    metadataBase: new URL("https://www.youssefbee.com"),
-    alternates: { canonical: "https://www.youssefbee.com" + meta.path },
+    metadataBase: new URL(site.url),
+    alternates: { canonical: site.url + meta.path },
     openGraph: {
-      url: "https://www.youssefbee.com" + meta.path,
+      url: site.url + meta.path,
       title: meta.title,
       description: meta.description,
       type: meta.type ?? "website",

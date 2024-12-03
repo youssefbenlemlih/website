@@ -1,10 +1,10 @@
 ---
 title: "Git Cheat Sheet (Free PDF)"
 description: "A collection of must know git commands."
-date: '2023-05-03'
+date: "2023-05-03"
 image: "/images/posts/005-git-cheat-sheet/cover.png"
 slug: git-cheat-sheet
-tags: [ 'git' ]
+tags: ["git"]
 ---
 
 Git is the free and open source distributed version control system that's responsible for everything GitHub
@@ -13,7 +13,10 @@ used Git commands for easy reference.
 
 You can get the PDF version of this cheat sheet for free here:
 
-<Download id="86d2cece-8ef9-4245-ad37-654f7517b4a0" text="Download cheat sheet PDF"/>
+<Download 
+  id="86d2cece-8ef9-4245-ad37-654f7517b4a0" 
+  text="Download PDF"
+/>
 
 ## Account Setup
 
@@ -119,7 +122,7 @@ git commit -m "[descriptive message]"
 Commands for **creating, changing and managing** branches.
 Isolating work in branches, changing context, and integrating changes
 
-List your branches. a * will appear next to the currently active branch
+List your branches. a \* will appear next to the currently active branch
 
 ```bash
 git branch
@@ -331,7 +334,6 @@ echo [file] >> .gitignore
 
 <br/>
 
-
 Pattern examples
 
 ```bash
@@ -342,13 +344,17 @@ node_modules/
 # ignore all folders starting with pattern
 pattern*/
 ```
+
 ## PDF version
 
 You can get the PDF version of this cheat sheet for free here:
 
-<Download id="86d2cece-8ef9-4245-ad37-654f7517b4a0" text="Download cheat sheet PDF"/>
+<Download 
+  id="86d2cece-8ef9-4245-ad37-654f7517b4a0"
+  text="Download PDF"
+/>
 
 ## Resources
 
-* [Git for All Platforms](http://git-scm.com)
-* [GitHub's collection of .gitignore templates](https://github.com/github/gitignore)
+- [Git for All Platforms](http://git-scm.com)
+- [GitHub's collection of .gitignore templates](https://github.com/github/gitignore)
