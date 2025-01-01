@@ -4,6 +4,10 @@ date: 2024-04-22
 slug: how-to-keep-up-with-react
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 One of the biggest challenges I faced when learning React, is to keep up with the latest changes.
 
 Things are evolving at a superfast pace.

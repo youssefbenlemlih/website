@@ -7,6 +7,10 @@ slug: react-map
 tags: [ 'react', 'typescript' ]
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 If you're diving into the world of React, you've likely come across the `Array.map` function.
 
 But what exactly is it, and why is it used so often with React?

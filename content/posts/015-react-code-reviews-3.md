@@ -8,6 +8,10 @@ youtubeKey: lZ0H49s4Hl4
 tags: [ 'code-reviews','react','basics','typescript' ]
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 The third episode of the React Code Review series, where I provide feedback on your React projects.
 
 This covers React &

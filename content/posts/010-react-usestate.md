@@ -9,6 +9,10 @@ tags: ["react", "basics", "typescript"]
 youtubeKey: -N19J_H-XrM
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 `useState` is arguably the most used React Hook.
 
 It allows you to add interactivity to your components & make your website more engaging.

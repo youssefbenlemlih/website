@@ -7,6 +7,10 @@ slug: master-react-areas-of-focus-2023
 tags: ['react','typescript']
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 It's easy to get overwhelmed when learning **React**.
 
 Thanks to the active community, there are so many libraries and frameworks, that make it even harder to **decide what to learn**.

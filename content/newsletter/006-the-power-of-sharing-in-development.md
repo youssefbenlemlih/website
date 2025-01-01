@@ -4,6 +4,10 @@ date: 2024-11-20
 slug: the-power-of-sharing-in-development
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Hey, it's Youssef again,
 
 One of the most impactful decisions I’ve made in my career is embracing **sharing**.

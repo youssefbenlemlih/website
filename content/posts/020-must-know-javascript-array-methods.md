@@ -7,6 +7,10 @@ slug: must-know-javascript-array-methods
 tags: ["javascript", "typescript"]
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Here’s a list of some of the most commonly used JavaScript array methods, each explained in one sentence with a code example:
 
 ## `Array.push`

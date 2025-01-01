@@ -1,5 +1,5 @@
 import _ from "lodash";
-import { allPosts, Post, allNewsletters } from "contentlayer2/generated";
+import { allPosts, Post, allNewsletters, allThoughts } from "contentlayer2/generated";
 import dayjs from "dayjs";
 
 const SHOW_DRAFTS_IN_DEV = false;
@@ -10,7 +10,9 @@ const byCreatedDate = (post1: WithDate, post2: WithDate) => {
 export function getAllNewslettersSortedByCreatedDate() {
   return allNewsletters.sort(byCreatedDate);
 }
-
+export function getAllThoughtsSortedByCreatedDate() {
+  return allThoughts.sort(byCreatedDate);
+}
 export function getAllPostsSortedByCreatedDate(): Post[] {
   return allPosts
     .filter((post) =>

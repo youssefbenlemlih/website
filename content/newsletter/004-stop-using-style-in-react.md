@@ -4,6 +4,10 @@ date: 2024-05-27
 slug: stop-using-style-in-react
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Hey there,
 
 In case you didn't already know, React's style prop comes with a lot of problems.

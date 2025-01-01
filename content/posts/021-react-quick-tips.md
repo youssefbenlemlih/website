@@ -8,6 +8,10 @@ slug: react-quick-tips
 tags: ["react", "basics"]
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 ## Tip #1: Simplify `useState` Types
 
 ```typescript tsx

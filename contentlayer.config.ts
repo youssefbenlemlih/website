@@ -27,6 +27,16 @@ export const Newsletter = defineDocumentType(() => ({
     slug: { type: "string", required: true },
   },
 }));
+export const Thought = defineDocumentType(() => ({
+  name: "Thought",
+  filePathPattern: `thought/*.md`,
+  contentType: "mdx",
+  fields: {
+    title: { type: "string", required: true },
+    date: { type: "date", required: true },
+    slug: { type: "string", required: true },
+  },
+}));
 export const Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `posts/*.md`,
@@ -79,7 +89,7 @@ export const Post = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "content",
-  documentTypes: [Post, Newsletter],
+  documentTypes: [Post, Thought, Newsletter],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypeSlug],

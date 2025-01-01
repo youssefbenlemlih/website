@@ -9,6 +9,10 @@ tags: [ 'react', "basics", ]
 youtubeKey: E0rzFKAafdk
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 One of the first things you learn in react, is how to style your components with inline styles.
 
 But while inline styles may be easy to use, they come with a lot of problems

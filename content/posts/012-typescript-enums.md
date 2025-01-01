@@ -8,6 +8,10 @@ youtubeKey: Pqyq3MkXcd0
 tags: ["typescript"]
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Enums in TypeScript can be really tricky. Learn the best approach to dealing with enums with the benefits of
 serializability, safe mapping, duck typing and value listing.
 

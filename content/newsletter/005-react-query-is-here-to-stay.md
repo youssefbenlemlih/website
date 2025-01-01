@@ -4,6 +4,10 @@ date: 2024-10-29
 slug: react-query-is-here-to-stay
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Hey, it's Youssef again,
 
 So I read a statistic last week that really blew my mind:

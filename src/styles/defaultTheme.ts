@@ -8,6 +8,12 @@ export const defaultTheme = createTheme({
     "3xl": rem(48),
     "4xl": rem(56),
   },
+  spacing: {
+    "2xl": "calc(2.25rem * var(--mantine-scale))",
+    "3xl": "calc(3rem * var(--mantine-scale))",
+    "4xl": "calc(3.25rem * var(--mantine-scale))",
+  },
+
   colors: {
     // this makes it possible to pass 'primary' as a color to Mantine Components
     primary: [

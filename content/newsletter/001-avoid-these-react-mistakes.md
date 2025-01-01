@@ -4,6 +4,10 @@ date: 2024-03-18
 slug: avoid-these-react-mistakes
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 In the latest Episode of the React Code Review, I addressed common React mistakes, including:
 
 The Derived State Antipattern

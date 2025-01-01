@@ -7,6 +7,10 @@ slug: git-cheat-sheet
 tags: ["git"]
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Git is the free and open source distributed version control system that's responsible for everything GitHub
 related that happens locally on your computer. This cheat sheet features the most important and commonly
 used Git commands for easy reference.

@@ -1,23 +1,7 @@
-import { H2 } from "@/components/H2";
+import { Anchor, Box, Card, Flex, rem, Text, ThemeIcon } from "@mantine/core";
 import {
-  Anchor,
-  Box,
-  Button,
-  Card,
-  Center,
-  Flex,
-  rem,
-  Text,
-  ThemeIcon,
-  Title,
-} from "@mantine/core";
-import {
-  IconAppWindow,
-  IconAppWindowFilled,
   IconDeviceMobile,
   IconExternalLink,
-  IconGlobe,
-  IconServer2,
   IconSettingsAutomation,
   IconStack2,
   IconWorld,
@@ -50,14 +34,14 @@ const services = [
 ];
 export const Pillars = () => {
   return (
-    <Flex direction={"column"} justify={"center"} m="xl" mih="80vh" py="120">
+    <Flex direction={"column"} justify={"center"} my="xl" py={rem(60)}>
       <Text fw={500} ta="center" size={rem(36)} style={{ textWrap: "balance" }}>
         What I do
       </Text>
       <div className="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 ">
         {services.map(({ service, icon, description }) => (
           <Card p="lg" radius={"md"} shadow="sm" withBorder key={service}>
-            <Flex gap="md">
+            <Flex gap="md" direction="column" align={"center"}>
               <ThemeIcon size={"xl"}>{icon}</ThemeIcon>
               <Box>
                 <Text fw={600}>{service}</Text>

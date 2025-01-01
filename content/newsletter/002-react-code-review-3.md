@@ -4,6 +4,10 @@ date: 2024-04-19
 slug: react-code-review-3
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 The latest episode of The React Code Review, is now live!
 
 It includes common Pitfalls and Best practices in React and TypeScript, that you can apply to your own code.

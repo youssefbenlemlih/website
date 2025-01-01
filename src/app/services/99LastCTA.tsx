@@ -3,7 +3,7 @@ import { Box, Button, Flex, rem, Text } from "@mantine/core";
 export const LastCTA = () => {
   return (
     <>
-      <Flex direction={"column"} justify={"center"} m="xl" h="80vh">
+      <Flex direction={"column"} justify={"center"} my="xl" py={rem(60)}>
         <Text fw={500} size={rem(36)} style={{ textWrap: "balance" }}>
           Bring Your Software Ideas To Life.
         </Text>

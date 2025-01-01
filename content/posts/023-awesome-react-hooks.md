@@ -8,6 +8,10 @@ tags: ["react", "basics"]
 youtubeKey: RCMQPqP8K8c
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Hooks have hanged the way we build React applications.
 
 They got rid of a lot of code complexity by encouraging **composition over inheritance**

@@ -9,6 +9,10 @@ tags: [ "npm" ]
 youtubeKey: "ar3bfKg1XhA"
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Every JavaScript project uses NPM packages.
 
 Trying to update each package manually would be tedious and time-consuming

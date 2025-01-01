@@ -8,6 +8,10 @@ youtubeKey: 73SxpGGy3Vo
 tags: [ 'code-reviews','react','basics','typescript' ]
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 In the second Episode of the React Code Review, I address common React mistakes, including:
 
 * The Derived State Antipattern

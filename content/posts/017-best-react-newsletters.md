@@ -7,6 +7,10 @@ slug: best-react-newsletters
 tags: ["nextjs", "react", "basics"]
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Keeping up with latest React News can be time-consuming.
 
 Luckily there are a few newsletter that deliver the latest news in your inbox regularly.

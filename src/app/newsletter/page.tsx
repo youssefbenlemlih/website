@@ -9,7 +9,7 @@ import dayjs from "dayjs";
 export const metadata = createMetadata({
   path: "/newsletter",
   title: "Newsletter",
-  image: "/images/newsletter.png.png",
+  image: "/images/newsletter.png",
   description: "Join the newsletter!",
 });
 

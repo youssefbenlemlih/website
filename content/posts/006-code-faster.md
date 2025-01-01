@@ -8,6 +8,10 @@ tags: [ 'productivity' ]
 youtubeKey: "ODVja2xZNQI"
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Have you ever wondered how some indie hackers can make a whole app in 1 or 2 days in 
 **hackathons** while developers in
 firms can take up to a year for that?

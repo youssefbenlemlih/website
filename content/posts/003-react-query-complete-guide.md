@@ -8,6 +8,10 @@ tags: ["react", "react-query"]
 youtubeKey: CwcJUknXYoo
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 Managing server data in web applications can be a complex and daunting task
 
 Luckily, React query, a **server state management library**, solves

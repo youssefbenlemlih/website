@@ -8,6 +8,10 @@ tags: ["git"]
 youtubeKey: "x7oSRtTtoc8"
 ---
 
+<Callouts.Tip>
+This article originally appeared on [youssefbee.com](https://youssefbee.com). Go check it out for an a up-do-date version.
+</Callouts.Tip>
+
 GIT Merge vs. Rebase is one of programmers' most debated topics.
 Whether you're a seasoned developer or just getting started,
 understanding these two fundamental Git workflows is crucial.

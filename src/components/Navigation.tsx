@@ -43,7 +43,10 @@ export const navigationPaths = [
       { href: "/newsletter", text: "Newsletter" },
       { href: "/resources/frontend-kit", text: "Frontend Kit" },
       { href: "/resources/git-cheat-sheet", text: "Git Cheat Sheet" },
-      { href: "/resources/website", text: "Website Code" },
+      {
+        href: "https://github.com/youssefbenlemlih/website",
+        text: "Website Code",
+      },
     ],
   },
   { href: "/about", text: "About" },

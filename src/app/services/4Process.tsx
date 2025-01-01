@@ -38,7 +38,7 @@ const icons = [
 ];
 export const Process = () => {
   return (
-    <Flex direction={"column"} justify={"center"} m="xl" mih="80vh" py="120">
+    <Flex direction={"column"} justify={"center"} my="xl" py={rem(60)}>
       <Text fw={500} ta="center" size={rem(36)} style={{ textWrap: "balance" }}>
         How I Work
       </Text>
